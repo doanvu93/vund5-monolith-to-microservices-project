@@ -3,11 +3,13 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:12.22-browsers
+      - image: circleci/node:14-browsers
     steps:
       - checkout     
  
-      # Set up Docker 
+      # Set up Docker
+      - setup_remote_docker:
+          version: 20.10.7
  
       # Troubleshoot notsup Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin"}
       # # Install dependencies with --force to ignore conflicts            
