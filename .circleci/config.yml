@@ -3,13 +3,13 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:12.22.12
+      - image: cimg/node:12.22.12
     steps:
       - checkout     
  
       # Set up Docker
       - setup_remote_docker:
-          version: 20.10.7
+          version: 12.22.12
  
       # Troubleshoot notsup Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin"}
       # # Install dependencies with --force to ignore conflicts            
