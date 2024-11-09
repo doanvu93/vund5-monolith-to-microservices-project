@@ -8,7 +8,7 @@ jobs:
       - checkout
       - setup_remote_docker
       # Troubleshoot notsup Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin"}
-      # # Install dependencies with --force to ignore conflicts            
+      # # Install dependencies with --force to ignore conflicts             
       # - run:
       #     name: Install dependencies for frontend
       #     working_directory: udagram-frontend
